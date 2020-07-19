@@ -19,7 +19,7 @@ cv2.imshow('img',obj_img)
 cv2.waitKey(0)    
 cv2.destroyAllWindows()
 
-diff_img = cv2.absdiff(obj_img,ref_img)
+diff_img = cv2.subtract(obj_img,ref_img)
 
 cv2.imshow('img',diff_img)
 cv2.waitKey(0)  
